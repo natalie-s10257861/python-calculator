@@ -31,3 +31,9 @@ def test_divide_by_zero():
     """Test that dividing by zero raises an error."""
     with pytest.raises(ValueError):
         divide(10, 0)
+
+def test_power():
+    """Test power function."""
+    assert power(2, 2) == 4
+    assert power(3, 3) == 27
+    assert power(10, 2) == 100
